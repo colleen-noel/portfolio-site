@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    color: silver;
+    
+    
+
+}
+.name{
+    background-color: black;
+    color: silver;
+    border-color: deeppink;
+    border-width: 5px;
+    border-style: solid;
+
+
+
+}
+.about{
+    background-color: black;
+    color: silver;
+    border: 5px solid indigo; 
+    
+
+}
+.c-sharp-game{
+    background-color: silver;
+    color: black;
+    border: 5px solid  indigo;
+    margin: 10px
+
+}
+.web-calculator{
+    background-color: silver;
+    color: black;
+    border: 5px solid  indigo; 
+    margin: 10px 
+}
+.thumbnail{
+    height: 200px;
+
+
+}
