@@ -1,14 +1,14 @@
 body{
-    background-color: black;
-    color: silver;
+    background-color: whitesmoke;
+    color: black;
     
     
 
 }
 .name{
-    background-color: black;
-    color: silver;
-    border-color: deeppink;
+    background-color: whitesmoke;
+    color: black;
+    border-color: silver;
     border-width: 5px;
     border-style: solid;
 
@@ -16,27 +16,28 @@ body{
 
 }
 .about{
-    background-color: black;
-    color: silver;
-    border: 5px solid indigo; 
+    background-color: whitesmoke;
+    color: black;
+    border: 5px solid silver; 
     
 
 }
 .c-sharp-game{
-    background-color: silver;
+    background-color: whitesmoke;
     color: black;
     border: 5px solid  indigo;
-    margin: 10px
+    margin: 10px;
+    text-align: center;
 
 }
-.web-calculator{
-    background-color: silver;
+.homework{
+    background-color: whitesmoke;
     color: black;
     border: 5px solid  indigo; 
-    margin: 10px 
+    margin: 10px;
+    text-align: center;
 }
 .thumbnail{
     height: 200px;
-
-
+    text-align: left;
 }
