@@ -1,0 +1,43 @@
+body{
+    background-image: url("../pictures/pink-and-purple-pattern-1517773944XUB.jpg");
+    color: black;
+}
+
+
+.intro{
+    background-color: whitesmoke;
+    color: black;
+    border: 5px solid indigo;
+    padding: 1em; 
+}
+
+.projects{
+    text-align: center;
+    color: black;
+    border: 5px solid indigo;
+    margin-top: .5em;
+}
+
+.title{
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    height: 3em;
+    line-height: 3em;
+}
+.card{
+    background-color: indigo;
+    text-align: center;
+    padding: .5em;
+    
+
+}
+.card-body{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: whitesmoke;
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+    
+}
