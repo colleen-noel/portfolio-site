@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import Project2 from '../components/Project'
+import Page from '../components/Page'
+import Project from '../components/Project'
 import Title from '../components/Title'
 import { retrieveProjects } from '../actions/projects'
 
@@ -25,7 +26,7 @@ export default () => {
 
 
   return (
-    <div>
+    <Page>
       <div className="container">
         <div className="row">
           <div className="col col-1" />
@@ -48,16 +49,15 @@ export default () => {
             <div className="projects">
               <Title />
               <div className="card">
-                <input type="text" name="select" onClick={updateProject} />
                 <div className="card-body">{project}</div>
                 {
-                  projectList.map(project => (<Project2 key={project.id} name={project.name} />))
+                  projectList.map(project => (<Project key={project.id} name={project.name} />))
                 }
               </div>
             </div>
           </div>
           <div className="col col-2" />
         </div>
-    </div>
+    </Page>
   )
 }
