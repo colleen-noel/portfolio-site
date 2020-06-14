@@ -7,8 +7,8 @@ const app = express()
 app.use(express.static('public'))
 
 
-app.get('/projects', getAllProjects)
-app.get('/projects/:name', getProjectByName)
+app.get('/api/projects', getAllProjects)
+app.get('/api/projects/:name', getProjectByName)
 
 
 app.all('*', (request, response) => response.sendFile(path.resolve(__dirname, 'public', 'index.html')))

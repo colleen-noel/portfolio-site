@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
-  entry: './index.js',
+  entry: './client.jsx',
   mode: 'development',
   watch: true,
   resolve: {
@@ -20,4 +20,9 @@ module.exports = {
       exclude: /node_modules/,
     }],
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      API_BASE_URL: JSON.stringify('http://localhost:4004/api'),
+    })
+  ],
 }

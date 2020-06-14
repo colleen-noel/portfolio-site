@@ -1,14 +1,10 @@
-body{
-    background-image: url("../pictures/pink-and-purple-pattern-1517773944XUB.jpg");
-    color: black;
-}
-
 
 .intro{
     background-color: whitesmoke;
     color: black;
     border: 5px solid indigo;
     padding: 1em; 
+    border-radius: 8px;
 }
 
 .projects{
@@ -18,26 +14,11 @@ body{
     margin-top: .5em;
 }
 
-.title{
-    background-color: whitesmoke;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    height: 3em;
-    line-height: 3em;
-}
 .card{
     background-color: indigo;
     text-align: center;
     padding: .5em;
+    border-radius: 8px;
     
 
-}
-.card-body{
-    border: 2px solid black;
-    padding: 10px;
-    background-color: whitesmoke;
-    margin-block-start: .5em;
-    margin-block-end: .5em;
-    
 }
