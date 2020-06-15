@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 
-const ProjectDiv = styled.div`
+const Project = styled.div`
  border: 2px solid black;
   padding: 10px;
   background-color: whitesmoke;
@@ -10,9 +10,10 @@ const ProjectDiv = styled.div`
   margin-block-end: .5em;
 `
 
-export default ({ id, name }) => (
-  <ProjectDiv key={id}>
-    <div>{name}</div>
-    {/* <NavLink to={`/projects/${id}`}>{`${name}`}</NavLink> */}
-  </ProjectDiv>
-)
+export default ({ id, name }) => {
+  return (
+    <Project key={id}>
+      <NavLink to={`/projects/${id}`}>{`${name}`}</NavLink>
+    </Project>
+  )
+}

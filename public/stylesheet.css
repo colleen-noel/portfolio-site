@@ -1,4 +1,9 @@
 
+body{
+    background-image: url("../pictures/pink-and-purple-pattern-1517773944XUB.jpg");
+    height: 100%;
+}
+
 .intro{
     background-color: whitesmoke;
     color: black;
@@ -19,6 +24,8 @@
     text-align: center;
     padding: .5em;
     border-radius: 8px;
-    
+}
 
+.list{
+    list-style:none;
 }

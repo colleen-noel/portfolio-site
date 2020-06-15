@@ -19,3 +19,15 @@ export const getProjectByName = async (request, response) => {
     ? response.send(project)
     : response.sendStatus(404)
 }
+
+export const getProjectById = async (request, response) => {
+  const { id } = request.params
+
+  const project = await models.Projects.findOne({
+    where: { id: id },
+  })
+
+  return project
+    ? response.send(project)
+    : response.sendStatus(404)
+}

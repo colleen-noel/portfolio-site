@@ -1,18 +1,18 @@
 import fetchDetailsForProject from '../actions/details'
 
-export const getProjectNameFromUrl = location => (location && location.pathname
+export const getProjectIdFromUrl = location => (location && location.pathname
   ? location.pathname.split('/projects/').pop()
   : ''
 )
 
-export const retrieveProjects = async (location) => {
-  const projectName = getProjectNameFromUrl(location)
+export const retrieveProject = async (location) => {
+  const projectId = getProjectIdFromUrl(location)
 
-  if (!projectName) return { details: {}, projects: [] }
+  if (!projectId) return { details: {} }
 
-  const { id, name, description, gitHubLink, apps, pictureName } = await fetchDetailsForProject(projectName)
+  const project = await fetchDetailsForProject(projectId)
 
-  if (!id || !name || !description || !gitHubLink || !apps || !pictureName) return { details: {}, projects: [] }
+  if (!project) return { details: {} }
 
-  return { projects, details: { id, name, description, gitHubLink, apps, pictureName } }
+  return project
 }

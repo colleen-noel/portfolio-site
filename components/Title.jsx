@@ -11,6 +11,6 @@ const Title = styled.div`
 `
 
 export default () => (
-  <div className="title">My Projects</div>
+  <Title>My Projects</Title>
 )
 

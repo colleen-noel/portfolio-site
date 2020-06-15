@@ -10,7 +10,7 @@
     "dev:migrate": "./node_modules/.bin/env-cmd ./node_modules/.bin/sequelize db:migrate --env development --config ./config/sequelize.js",
     "lint": "./node_modules/.bin/eslint --format codeframe --ext jsx .",
     "lint:fix": "./node_modules/.bin/eslint --fix --format codeframe .",
-    "test": "./node_modules/.bin/mocha tests/**/*.test.js"
+    "test": "./node_modules/.bin/mocha --require @babel/register tests/**/*.test.js"
   },
   "dependencies": {
     "3": "^2.1.0",
@@ -33,6 +33,7 @@
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
+    "@babel/register": "^7.10.1",
     "babel-loader": "^8.1.0",
     "babel-watch": "^7.0.0",
     "concurrently": "^5.2.0",
