@@ -6,14 +6,13 @@ import Page from '../components/Page'
 import { retrieveProject } from '../utils/projects'
 
 export default ({ location }) => {
-
   const [project, setProject] = useState({})
 
   useEffect(() => {
     async function pullData() {
-      const project = await retrieveProject(location)
+      const p = await retrieveProject(location)
 
-      setProject(project)
+      setProject(p)
     }
 
     pullData()
@@ -24,7 +23,7 @@ export default ({ location }) => {
       <GoBack />
       <div className="container">
         <div className="row">
-          <div className="col col-2"></div>
+          <div className="col col-2" />
           <div className="col col-8">
 
             {
@@ -37,10 +36,9 @@ export default ({ location }) => {
                 : (<NotFound message="Sorry, that project is not mine" />)
             }
           </div>
-          <div className="col col-2"></div>
+          <div className="col col-2" />
         </div>
       </div>
     </Page>
   )
 }
-

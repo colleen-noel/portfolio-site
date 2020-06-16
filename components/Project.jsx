@@ -10,10 +10,8 @@ const Project = styled.div`
   margin-block-end: .5em;
 `
 
-export default ({ id, name }) => {
-  return (
-    <Project key={id}>
-      <NavLink to={`/projects/${id}`}>{`${name}`}</NavLink>
-    </Project>
-  )
-}
+export default ({ id, name }) => (
+  <Project key={id}>
+    <NavLink to={`/projects/${id}`}>{`${name}`}</NavLink>
+  </Project>
+)
