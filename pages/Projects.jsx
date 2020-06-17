@@ -20,18 +20,29 @@ export default () => {
 
   return (
     <Page>
+      <nav className="navbar sticky-top navbar navbar-expand-lg intro">
+        <span className="navbar-brand">Colleen Noel</span>
+        <div className="collapse navbar-collapse">
+          <div className="navbar-nav">
+            <a className="nav-link" href="https://www.linkedin.com/in/colleen-noel-58878b144/">LinkedIn</a>
+            <a className="nav-link" href="https://github.com/colleen-noel">GitHub</a>
+            <a className="nav-link" href="mailto:noel.colleen@gmail.com">noel.colleen@gmail.com</a>
+          </div>
+        </div>
+      </nav>
       <div className="container">
         <div className="row">
           <div className="col col-1" />
           <div className="col col-10">
             <div className="intro">
-              <h1>Colleen Noel</h1>
               An aspiring front-end software engineer, I am currently finishing an 18-week Web
               Development Boot Camp.
               In such a short time, I have developed skills in front-end and back-end programming, and am looking
               forward to expanding upon this knowledge.
             </div>
+
           </div>
+
           <div className="col col-1" />
         </div>
         <div className="row">

@@ -10,13 +10,7 @@ body{
     border: 5px solid indigo;
     padding: 1em; 
     border-radius: 8px;
-}
-
-.projects{
-    text-align: center;
-    color: black;
-    border: 5px solid indigo;
-    margin-top: .5em;
+    margin-bottom: 1em;
 }
 
 .card{
@@ -28,4 +22,13 @@ body{
 
 .list{
     list-style:none;
+}
+
+.navbar{
+    margin-bottom: 1em;
+}
+
+.navbar-brand{
+    font-size: 34px;
+    font-weight: 600;
 }
