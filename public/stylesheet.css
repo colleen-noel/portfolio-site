@@ -1,0 +1,46 @@
+body{
+    background-image: url("../pictures/opaquepaper59d5.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.intro{
+    background-color: whitesmoke;
+    color: black;
+    border: 5px solid indigo;
+    padding: 1em; 
+    border-radius: 8px;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.card{
+    background-color:rgb(249, 246, 231);
+    text-align: center;
+    padding: .5em;
+    border-radius: 8px;
+    position: relative;
+}
+
+.list{
+    list-style:none;
+}
+
+.navbar{
+    margin-bottom: 1em;
+}
+
+.navbar-brand{
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.credit{
+    padding: 2em;
+    text-align: left;
+
+}
+
