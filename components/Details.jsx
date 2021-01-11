@@ -11,9 +11,15 @@ const Details = styled.div`
 `
 
 export default ({ project }) => {
-  const appsList = project.apps
+  let appsList = project.apps
     ? JSON.parse(project.apps)
     : []
+
+  appsList = appsList.map((app, i) => ({
+    key: i,
+    value: app,
+  }))
+
   return (
     <Details key={project.id}>
       <h2>{project.name}</h2>
@@ -23,7 +29,7 @@ export default ({ project }) => {
       </div>
       <ul className="list">
         Applications Used to Build This Project:
-        {appsList.map(app => <li>{app}</li>)}
+        {appsList.map(app => <li key={app.key}>{app.value}</li>)}
       </ul>
       <div>
         <img src={project.pictureName} style={{ width: '650px' }} alt="project thumbnail" />

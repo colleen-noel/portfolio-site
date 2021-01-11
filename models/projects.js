@@ -4,6 +4,6 @@ export default (connection, Sequelize) => connection.define('projects', {
   description: { type: Sequelize.STRING },
   gitHubLink: { type: Sequelize.STRING },
   apps: { type: Sequelize.STRING },
-  pictureName: { type: Sequelize.STRING, allowNull: true }
+  pictureName: { type: Sequelize.STRING, allowNull: true },
 
 })

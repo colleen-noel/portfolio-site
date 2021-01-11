@@ -17,7 +17,6 @@ export default () => {
     pullData()
   }, [])
 
-
   return (
     <Page>
       <nav className="navbar sticky-top navbar navbar-expand-lg intro">
@@ -35,10 +34,10 @@ export default () => {
           <div className="col col-1" />
           <div className="col col-10">
             <div className="intro">
-              An aspiring front-end software engineer, I am currently finishing an 18-week Web
-              Development Boot Camp.
-              In such a short time, I have developed skills in front-end and back-end programming, and am looking
-              forward to expanding upon this knowledge.
+              An aspiring front-end software engineer, I recently completed an 18-week Web
+              Development Boot Camp. During that time I learned JavaScript, CSS, HTML, MySQL, REST API and React,
+              and honed my skills by completing various projects and building a portfolio website.
+              I continue to build upon this skillset, and am currently learning to build a website utilizing Angular 10.
             </div>
 
           </div>
@@ -52,8 +51,11 @@ export default () => {
               <Title />
               <div className="card">
                 {
-                  projectList.map(project => (<Project id={project.id} name={project.name} />))
+                  projectList.map(project => (<Project project={project} key={project.id} />))
                 }
+              </div>
+              <div className="credit">
+                <a className="nav-link" href="https://www.myfreetextures.com/">background image courtesy of www.myfreetextures.com/</a>
               </div>
             </div>
           </div>

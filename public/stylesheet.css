@@ -1,7 +1,10 @@
-
 body{
-    background-image: url("../pictures/pink-and-purple-pattern-1517773944XUB.jpg");
+    background-image: url("../pictures/opaquepaper59d5.jpg");
+    background-repeat: repeat;
+    background-size: cover;
     height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 .intro{
@@ -11,13 +14,15 @@ body{
     padding: 1em; 
     border-radius: 8px;
     margin-bottom: 1em;
+    position: relative;
 }
 
 .card{
-    background-color: indigo;
+    background-color:rgb(249, 246, 231);
     text-align: center;
     padding: .5em;
     border-radius: 8px;
+    position: relative;
 }
 
 .list{
@@ -32,3 +37,10 @@ body{
     font-size: 34px;
     font-weight: 600;
 }
+
+.credit{
+    padding: 2em;
+    text-align: left;
+
+}
+
