@@ -20,6 +20,10 @@ export default ({ project }) => {
     value: app,
   }))
 
+  const picElement = project.pictureName
+    ? <img src={project.pictureName} style={{ width: '650px' }} alt="project thumbnail" />
+    : <span></span>
+
   return (
     <Details key={project.id}>
       <h2>{project.name}</h2>
@@ -28,11 +32,11 @@ export default ({ project }) => {
         <a href={project.gitHubLink}>{project.gitHubLink}</a>
       </div>
       <ul className="list">
-        Applications Used to Build This Project:
+        Tools Used to Build This Project:
         {appsList.map(app => <li key={app.key}>{app.value}</li>)}
       </ul>
       <div>
-        <img src={project.pictureName} style={{ width: '650px' }} alt="project thumbnail" />
+        {picElement}
       </div>
     </Details>
   )

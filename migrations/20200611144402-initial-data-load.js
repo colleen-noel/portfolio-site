@@ -119,7 +119,7 @@ module.exports = {
       name: 'API Portfolio Project',
       description: 'I built a REST API from the ground up, with a PUG documentation page, that returns JSON data, and a test suite to ensure the functionality of the API.  ',
       gitHubLink: 'https://github.com/colleen-noel/api-portfolio-project',
-      apps: '["jacascript", "express", "mySQL", "sequelize", "pug", "bootstrap", "body-parser", "chai", "mocha", "sinon", "sinon-chai"]',
+      apps: '["javascript", "express", "mySQL", "sequelize", "pug", "bootstrap", "body-parser", "chai", "mocha", "sinon", "sinon-chai"]',
       pictureName: 'pictures/API-portfolio-project.png',
     },
     {

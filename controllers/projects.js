@@ -24,7 +24,7 @@ export const getProjectById = async (request, response) => {
   const { id } = request.params
 
   const project = await models.Projects.findOne({
-    where: { id: id },
+    where: { id },
   })
 
   return project

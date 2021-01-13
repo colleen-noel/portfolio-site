@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, { useState, useEffect } from 'react'
 import Details from '../components/Details'
 import GoBack from '../components/GoBack'

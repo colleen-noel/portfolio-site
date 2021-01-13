@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   "env": { "es6": true, "node": true, "browser": true },
   "extends": "eslint:recommended",
   "extends": "airbnb",

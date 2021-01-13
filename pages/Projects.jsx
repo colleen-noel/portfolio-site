@@ -4,6 +4,18 @@ import Project from '../components/Project'
 import Title from '../components/Title'
 import retrieveProjects from '../actions/projects'
 
+function sortProjects(lhs, rhs) {
+  if (lhs.id > rhs.id) {
+    return -1
+  }
+  if (lhs.id < rhs.id) {
+    return 1
+  }
+  if (lhs.id === rhs.id) {
+    return 0
+  }
+}
+
 export default () => {
   const [projectList, setProjectList] = useState([])
 
@@ -17,6 +29,7 @@ export default () => {
     pullData()
   }, [])
 
+  const sortedProjectList = projectList.sort(sortProjects)
   return (
     <Page>
       <nav className="navbar sticky-top navbar navbar-expand-lg intro">
@@ -51,7 +64,7 @@ export default () => {
               <Title />
               <div className="card">
                 {
-                  projectList.map(project => (<Project project={project} key={project.id} />))
+                  sortedProjectList.map(project => (<Project project={project} key={project.id} />))
                 }
               </div>
               <div className="credit">
