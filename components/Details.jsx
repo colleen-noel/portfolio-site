@@ -32,7 +32,7 @@ export default ({ project }) => {
         <a href={project.gitHubLink}>{project.gitHubLink}</a>
       </div>
       <ul className="list">
-        Applications Used to Build This Project:
+        Tools Used to Build This Project:
         {appsList.map(app => <li key={app.key}>{app.value}</li>)}
       </ul>
       <div>
