@@ -14,6 +14,7 @@ app.get('/api/project/:id', getProjectById)
 
 app.all('*', (request, response) => response.sendFile(path.resolve(__dirname, 'public', 'index.html')))
 
-app.listen(4004, () => {
-  console.log('Listening on port 4004...') // eslint-disable-line no-console
+const port = process.env.PORT ? process.env.PORT : 4004
+app.listen(port, () => {
+  console.log('Listening on port ${port}...') // eslint-disable-line no-console
 })

@@ -1,5 +1,9 @@
 #Ignore Webpack Config File
 webpack.dev.js
+webpack.prod.js
+
+#Ignore public files
+public
 .eslintrc.js
 bootstrap
 
