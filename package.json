@@ -5,6 +5,7 @@
   "main": "script.jsx",
   "scripts": {
     "build": "npm run build:clean && npm run build:server &&  npm run build:client && npm run build:copy && npm run build:zip",
+    "build:eb": "babel-server.js --out-file server.js",
     "build:clean": "del /f portfolio.zip && rmdir /q /s dist && mkdir dist\\public",
     "build:client": ".\\node_modules\\.bin\\webpack --progress --config .\\webpack.prod.js",
     "build:copy": "copy .\\package.json .\\dist\\package.json",
