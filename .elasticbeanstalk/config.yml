@@ -1,0 +1,18 @@
+branch-defaults:
+  second-deploy:
+    environment: null
+    group_suffix: null
+global:
+  application_name: portfolio-site
+  branch: second-deploy
+  default_ec2_keyname: portfolio-site
+  default_platform: Node.js
+  default_region: us-east-2
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  repository: portfolio-site
+  sc: git
+  workspace_type: Application
